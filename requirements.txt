@@ -3,3 +3,5 @@ joblib
 pandas
 numpy
 scikit-learn==1.2.0
+setuptools
+distutils  # optional, depending on environment
