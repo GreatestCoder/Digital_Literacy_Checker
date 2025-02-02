@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 import joblib
 
-model = joblib.load(r'C:\Users\LENOVO\Documents\AI\MachineLearning\Digital_Literacy\Model.pkl')
-le = joblib.load(r'C:\Users\LENOVO\Documents\AI\MachineLearning\Digital_Literacy\LabelEncoder.pkl')
-df = pd.read_csv(r"C:\Users\LENOVO\Documents\AI\MachineLearning\Digital_Literacy\data\digital_literacy_dataset.csv")
+model = joblib.load('Model.pkl')  
+le = joblib.load('LabelEncoder.pkl')
+df = pd.read_csv('data\digital_literacy_dataset.csv')
 
 slider_columns = ['Age', 'Gender', 'Education_Level', 'Employment_Status', 'Household_Income', 'Location_Type', 
                   'Basic_Computer_Knowledge_Score', 'Internet_Usage_Score', 'Mobile_Literacy_Score', 
